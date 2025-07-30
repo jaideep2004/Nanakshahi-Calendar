@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .calendar-container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .calendar {
+    display: none;
+    padding: 1rem;
+  }
+
+  input#jan:checked ~ #calendar-jan,
+  input#feb:checked ~ #calendar-feb,
+  input#mar:checked ~ #calendar-mar,
+  input#april:checked ~ #calendar-april,
+  input#may:checked ~ #calendar-may,
+  input#june:checked ~ #calendar-june,
+  input#july:checked ~ #calendar-july,
+  input#august:checked ~ #calendar-august,
+  input#september:checked ~ #calendar-september,
+  input#october:checked ~ #calendar-october,
+  input#november:checked ~ #calendar-november,
+  input#december:checked ~ #calendar-december {
+    display: block;
+  }
+  
+  
+  .calendar-header {
+    background: #673147;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .calendar-header .arrow label {
+    color: white;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  
+  .calendar-grid span {
+    background: #f3ecec;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  a {
+    color: #000; /* ya koi aur color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #d32f2f;
+    text-decoration: underline;
+  }
+  
+  

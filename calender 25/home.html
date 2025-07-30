@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home</title>
+<style>
+:root {
+    --brand: #F36F21;
+    --brand-light: #FFEFE3;
+    --radius: 14px;
+    --shadow: 0 4px 12px rgba(0,0,0,.06);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+body {
+    margin: 0;
+    background: #fff;
+    color: #222;
+}
+header {
+    background: var(--brand);
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header img {
+    height: 40px;
+    width: 40px;
+}
+.header-text {
+    line-height: 1.4;
+}
+
+/* Combined Card (Image + Button) */
+.link-card {
+    display: block;
+    margin: 16px auto;
+    max-width: 500px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+.link-card:hover,
+.link-card:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+.link-card img {
+    width: 100%;
+    display: block;
+}
+.link-card .card-text {
+    background: var(--brand);
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Separate Image Container */
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+.img-container img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}
+
+/* Separate Card Button */
+.card {
+    display: block;
+    margin: 16px auto;
+    max-width: 500px;
+    padding: 22px 24px;
+    background: var(--brand);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover,
+.card:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="khanda1.jpg" alt="" />
+    <div class="header-text">
+        ਵਾਹਿਗੁਰੂ ਜੀ ਦਾ ਖ਼ਾਲਸਾ<br>
+        ਵਾਹਿਗੁਰੂ ਜੀ ਦੀ ਫਤਿਹ
+    </div>
+    <img src="khanda1.jpg" alt="" />
+</header>
+
+<br>
+
+<!-- Golden Temple Image + Nanakshahi Calendar Button Combined -->
+<a href="index 1.html" class="link-card">
+    <img src="golden temple.jpg" alt="Golden Temple" width="200" height="400" />
+    <div class="card-text">Nanakshahi Calendar</div>
+</a>
+
+<!-- Separate Hukamnama Sahib Section -->
+ 
+
+<!-- Golden Temple Image + Nanakshahi Calendar Button Combined -->
+<a href="index 3.html" class="link-card">
+    <img src="hukamnama sahib.jpg" alt="Golden Temple"  width="200" height="400" />
+    <div class="card-text">Hukamnama Sahib</div>
+</a>
+</body>
+</html>
